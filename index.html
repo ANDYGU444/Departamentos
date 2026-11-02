@@ -236,7 +236,7 @@ const SLOTS = [
 ];
 const DEPTS = [];
 SLOTS.forEach(s=>{let d=DEPTS.find(x=>x.id===s.dept); if(!d){d={id:s.dept,label:s.label,slots:[]};DEPTS.push(d)} d.slots.push(s.id)});
-const SEED_NAMES = ['Jordi Escobar','pedro jara','Andy Garro','elpidio lopez'];
+const SEED_NAMES = ['Jordi Escobar','Elías Marín','Andy Garro','Elido Rodríguez','Gabriel López','Royner Quirós','Diego Osorio','Dionnis Osorio','Moisés Alfaro','Pablo Zúñiga','Edwin Leitón','John Guillén','Jose Luis Vásquez','Orlando Badilla','Abel Peraza','Ryan Ordóñez','Alfonso Guillén','Andrey Barrantes','Naigel Rojas','Franklin Montero','Roberto Menocal','Franklin Mena'];
 
 /* ================= Estado ================= */
 let S;
@@ -247,8 +247,8 @@ function seed(){
   return {
     brothers,
     restrictions:[
-      {id:rid(),bid:id('pedro jara'),from:'2026-11-08',to:'',reason:'Trabajo',note:'Ejemplo: puedes eliminarlo'},
-      {id:rid(),bid:id('elpidio lopez'),from:'2026-11-12',to:'2026-11-15',reason:'Viaje',note:'Ejemplo: puedes eliminarlo'}
+      {id:rid(),bid:id('Orlando Badilla'),from:'2026-11-08',to:'',reason:'Trabajo',note:'Ejemplo: puedes eliminarlo'},
+      {id:rid(),bid:id('Gabriel López'),from:'2026-11-12',to:'2026-11-15',reason:'Viaje',note:'Ejemplo: puedes eliminarlo'}
     ],
     programs:{}, skipped:{}
   };
